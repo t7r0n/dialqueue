@@ -1,0 +1,18 @@
+{
+  "company": "throxy",
+  "repo": "dialqueue",
+  "metrics": [
+    "throxy_coverage",
+    "entire_risk",
+    "right_precision",
+    "human_latency"
+  ],
+  "failure_modes": [
+    "throxy_drift",
+    "entire_gap",
+    "right_misroute",
+    "human_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
