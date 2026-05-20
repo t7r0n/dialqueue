@@ -1,0 +1,69 @@
+{
+  "company": "throxy",
+  "repo": "dialqueue",
+  "terms": [
+    "throxy",
+    "entire",
+    "right",
+    "human",
+    "traditional",
+    "industry",
+    "linkedin",
+    "apollo"
+  ],
+  "metrics": [
+    "throxy_coverage",
+    "entire_risk",
+    "right_precision",
+    "human_latency"
+  ],
+  "failure_modes": [
+    "throxy_drift",
+    "entire_gap",
+    "right_misroute",
+    "human_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "throxy evidence replay",
+      "metric": "throxy_coverage",
+      "failure_mode": "throxy_drift",
+      "evidence": "ev_0132",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "human operator packet",
+      "metric": "entire_risk",
+      "failure_mode": "entire_gap",
+      "evidence": "ev_0011",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "right regression harness",
+      "metric": "right_precision",
+      "failure_mode": "right_misroute",
+      "evidence": "ev_0066",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "entire boundary probe",
+      "metric": "human_latency",
+      "failure_mode": "human_blindspot",
+      "evidence": "ev_0033",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "throxy gets a local, deterministic pressure test around throxy, entire, and right. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
