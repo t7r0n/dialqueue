@@ -5,7 +5,7 @@
   "package": "dialqueue",
   "cli": "dialqueue",
   "title": "Dialqueue",
-  "problem": "Throxy's entire moat is \"we find the right human in a traditional industry that LinkedIn/Apollo can't surface.\" But the public artifact that proves this - an ICP to decision maker mapper for manufacturing/logistics/3PLs - does not exist. Today their AI Engineer role (YC) implies they're still doing this with internal Python + scraper duct tape. Meanwhile the cold calling team has a separate, unsolved problem: call list prioritization. They have ~10M emails sent and ~60 SDRs dialing daily (throxy.",
+  "problem": "Throxy's entire moat is \"we find the right human in a traditional industry that LinkedIn/Apollo can't surface.\" But the public artifact that proves this \u2014 an ICP to decision maker mapper for manufacturing/logistics/3PLs \u2014 does not exist. Today their AI Engineer role (YC) implies they're still doing this with internal Python + scraper duct tape. Meanwhile the cold calling team has a separate, unsolved problem: call list prioritization. They have ~10M emails sent and ~60 SDRs dialing daily (throxy.",
   "direction": "A vertical, NAICS aware call prioritization engine that turns Throxy's human callers from \"dial the next row\" into a 3 7x higher connect/qualified meeting rate, with a short local demo of the rebuilt daily queue.",
   "why": "Contextual bandits + doubly robust OPE on a call floor is unusual. Most ad tech CB practitioners ship CB for impressions; almost nobody applies it to a 60 SDR human dialer. The DR OPE step in particular means we can ship a policy change without a 6 week A/B that costs the floor real meetings.",
   "terms": [
