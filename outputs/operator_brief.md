@@ -1,6 +1,6 @@
 # Operator Brief: throxy
 
-throxy gets a local, deterministic pressure test around throxy, entire, and right. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+throxy gets a local, deterministic pressure test around throxy, entire, and right. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
