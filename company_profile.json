@@ -1,12 +1,12 @@
 {
-  "company": "Dialqueue",
-  "company_slug": "dialqueue",
-  "repo": "dialqueue",
-  "package": "dialqueue",
-  "cli": "dialqueue",
-  "title": "Dialqueue",
-  "problem": "Dialqueue's entire moat is \"we find the right human in a traditional industry that LinkedIn/Apollo can't surface.\" But the public artifact that proves this - an ICP to decision maker mapper for manufacturing/logistics/3PLs - does not exist. Today their AI Engineer role (YC) implies they're still doing this with internal Python + scraper duct tape. Meanwhile the cold calling team has a separate, unsolved problem: call list prioritization. They have ~10M emails sent and ~60 SDRs dialing daily (Dialqueue.",
-  "direction": "A vertical, NAICS aware call prioritization engine that turns Dialqueue's human callers from \"dial the next row\" into a 3 7x higher connect/qualified meeting rate, with a short local demo of the rebuilt daily queue.",
+  "company": "Call Priority Lab",
+  "company_slug": "call-priority-lab",
+  "repo": "call-priority-lab",
+  "package": "call_priority_lab",
+  "cli": "call-priority-lab",
+  "title": "Call Priority Lab",
+  "problem": "Outbound teams in traditional industries need a reproducible way to rank accounts and decision makers before a caller starts the day. The local harness scores source coverage, role fit, industry context, and queue priority without private CRM data or hosted services.",
+  "direction": "A vertical, NAICS-aware call prioritization engine that turns a raw account list into a ranked, evidence-backed daily queue.",
   "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
     "evidence",
@@ -57,5 +57,5 @@
     }
   ],
   "sources": [],
-  "github_url": "https://github.com/t7r0n/dialqueue"
+  "github_url": "https://github.com/t7r0n/call-priority-lab"
 }

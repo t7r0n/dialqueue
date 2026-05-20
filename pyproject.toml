@@ -1,7 +1,7 @@
 [project]
-name = "dialqueue"
+name = "call-priority-lab"
 version = "0.1.0"
-description = "A vertical, NAICS aware call prioritization engine that turns Dialqueue's human callers from 'dial the next row' into a "
+description = "A vertical, NAICS-aware call prioritization engine for evidence-backed daily queues."
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
@@ -10,7 +10,7 @@ authors = [
 dependencies = []
 
 [project.scripts]
-dialqueue = "dialqueue.cli:main"
+call-priority-lab = "call_priority_lab.cli:main"
 
 [dependency-groups]
 dev = [

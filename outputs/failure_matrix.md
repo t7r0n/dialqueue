@@ -1,4 +1,4 @@
-# Failure Matrix: Dialqueue
+# Failure Matrix: Call Priority Lab
 
 | Scenario | Failure mode | Metric | Gate | Evidence |
 | --- | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 {
-  "company": "Dialqueue",
-  "repo": "dialqueue",
+  "company": "Call Priority Lab",
+  "repo": "call-priority-lab",
   "metrics": [
     "evidence_coverage",
     "handoff_risk",
