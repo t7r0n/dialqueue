@@ -18,7 +18,6 @@
     "linkedin",
     "apollo",
     "surface",
-    "public",
     "artifact",
     "proves",
     "decision",
@@ -26,7 +25,8 @@
     "mapper",
     "manufacturing",
     "logistics",
-    "exist"
+    "exist",
+    "today"
   ],
   "metrics": [
     "throxy_coverage",
@@ -39,6 +39,28 @@
     "entire_gap",
     "right_misroute",
     "human_blindspot"
+  ],
+  "archetypes": [
+    {
+      "name": "throxy evidence replay",
+      "trigger": "throxy signal changes while entire context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "entire boundary probe",
+      "trigger": "entire handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "right regression harness",
+      "trigger": "right behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "human operator packet",
+      "trigger": "human output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
   ],
   "sources": [
     "https://throxy.com/resources/blog/ai-sdrs-are-killing-sales",
