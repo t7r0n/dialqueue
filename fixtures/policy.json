@@ -1,37 +1,37 @@
 {
-  "company": "throxy",
+  "company": "Dialqueue",
   "repo": "dialqueue",
   "metrics": [
-    "throxy_coverage",
-    "entire_risk",
-    "right_precision",
-    "human_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "throxy_drift",
-    "entire_gap",
-    "right_misroute",
-    "human_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "domain_archetypes": [
     {
-      "name": "throxy evidence replay",
-      "trigger": "throxy signal changes while entire context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "entire boundary probe",
-      "trigger": "entire handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "right regression harness",
-      "trigger": "right behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "human operator packet",
-      "trigger": "human output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],

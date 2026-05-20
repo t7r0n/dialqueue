@@ -1,66 +1,57 @@
 {
   "repo": "dialqueue",
-  "company": "throxy",
+  "company": "Dialqueue",
   "rubric_axes": [
     {
-      "axis": "throxy_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "throxy_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "entire_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "entire_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "right_precision",
+      "axis": "claim_precision",
       "failures": [
-        "right_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "human_latency",
+      "axis": "review_latency",
       "failures": [
-        "human_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "throxy evidence replay",
-      "trigger": "throxy signal changes while entire context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "entire boundary probe",
-      "trigger": "entire handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "right regression harness",
-      "trigger": "right behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "human operator packet",
-      "trigger": "human output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://throxy.com/resources/blog/ai-sdrs-are-killing-sales",
-    "https://www.ycombinator.com/companies/throxy",
-    "https://www.ycombinator.com/launches/NRm-throxy-book-meetings-without-the-busywork",
-    "https://www.tryfondo.com/blog/throxy-launches",
-    "https://gohub.vc/throxy-ai-sales-agents/",
-    "https://gohub.vc/throxy-raises-6m-seed-round/",
-    "https://www.linkedin.com/in/bmerey/",
-    "https://arxiv.org/abs/1103.4601"
-  ]
+  "sources_used": []
 }

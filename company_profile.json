@@ -1,76 +1,61 @@
 {
-  "company": "throxy",
-  "company_slug": "throxy",
+  "company": "Dialqueue",
+  "company_slug": "dialqueue",
   "repo": "dialqueue",
   "package": "dialqueue",
   "cli": "dialqueue",
   "title": "Dialqueue",
-  "problem": "Throxy's entire moat is \"we find the right human in a traditional industry that LinkedIn/Apollo can't surface.\" But the public artifact that proves this \u2014 an ICP to decision maker mapper for manufacturing/logistics/3PLs \u2014 does not exist. Today their AI Engineer role (YC) implies they're still doing this with internal Python + scraper duct tape. Meanwhile the cold calling team has a separate, unsolved problem: call list prioritization. They have ~10M emails sent and ~60 SDRs dialing daily (throxy.",
-  "direction": "A vertical, NAICS aware call prioritization engine that turns Throxy's human callers from \"dial the next row\" into a 3 7x higher connect/qualified meeting rate, with a short local demo of the rebuilt daily queue.",
-  "why": "Contextual bandits + doubly robust OPE on a call floor is unusual. Most ad tech CB practitioners ship CB for impressions; almost nobody applies it to a 60 SDR human dialer. The DR OPE step in particular means we can ship a policy change without a 6 week A/B that costs the floor real meetings.",
+  "problem": "Dialqueue's entire moat is \"we find the right human in a traditional industry that LinkedIn/Apollo can't surface.\" But the public artifact that proves this - an ICP to decision maker mapper for manufacturing/logistics/3PLs - does not exist. Today their AI Engineer role (YC) implies they're still doing this with internal Python + scraper duct tape. Meanwhile the cold calling team has a separate, unsolved problem: call list prioritization. They have ~10M emails sent and ~60 SDRs dialing daily (Dialqueue.",
+  "direction": "A vertical, NAICS aware call prioritization engine that turns Dialqueue's human callers from \"dial the next row\" into a 3 7x higher connect/qualified meeting rate, with a short local demo of the rebuilt daily queue.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "throxy",
-    "entire",
-    "right",
-    "human",
-    "traditional",
-    "industry",
-    "linkedin",
-    "apollo",
-    "surface",
-    "artifact",
-    "proves",
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
     "decision",
-    "maker",
-    "mapper",
-    "manufacturing",
-    "logistics",
-    "exist",
-    "today"
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "throxy_coverage",
-    "entire_risk",
-    "right_precision",
-    "human_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "throxy_drift",
-    "entire_gap",
-    "right_misroute",
-    "human_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "throxy evidence replay",
-      "trigger": "throxy signal changes while entire context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "entire boundary probe",
-      "trigger": "entire handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "right regression harness",
-      "trigger": "right behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "human operator packet",
-      "trigger": "human output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://throxy.com/resources/blog/ai-sdrs-are-killing-sales",
-    "https://www.ycombinator.com/companies/throxy",
-    "https://www.ycombinator.com/launches/NRm-throxy-book-meetings-without-the-busywork",
-    "https://www.tryfondo.com/blog/throxy-launches",
-    "https://gohub.vc/throxy-ai-sales-agents/",
-    "https://gohub.vc/throxy-raises-6m-seed-round/",
-    "https://www.linkedin.com/in/bmerey/",
-    "https://arxiv.org/abs/1103.4601"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/dialqueue"
 }

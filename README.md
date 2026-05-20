@@ -1,12 +1,12 @@
 # Dialqueue
 
-A vertical, NAICS aware call prioritization engine that turns Throxy's human callers from "dial the next row" into a 3 7x higher connect/qualified meeting rate, with a short local demo of the rebuilt daily queue.
+A vertical, NAICS aware call prioritization engine that turns Dialqueue's human callers from "dial the next row" into a 3 7x higher connect/qualified meeting rate, with a short local demo of the rebuilt daily queue.
 
 ![Dialqueue working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Throxy's entire moat is "we find the right human in a traditional industry that LinkedIn/Apollo can't surface." But the public artifact that proves this — an ICP to decision maker mapper for manufacturing/logistics/3PLs — does not exist. Today their AI Engineer role (YC) implies they're still doing this with internal Python + scraper duct tape. Meanwhile.
+Dialqueue's entire moat is "we find the right human in a traditional industry that LinkedIn/Apollo can't surface." But the public artifact that proves this — an ICP to decision maker mapper for manufacturing/logistics/3PLs — does not exist. Today their AI Engineer role (YC) implies they're still doing this with internal Python + scraper duct tape. Meanwhile.
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -22,14 +22,14 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ## Signals it measures
 
-- `throxy coverage`
+- `Dialqueue coverage`
 - `entire risk`
 - `right precision`
 - `human latency`
 
 ## Failure modes it plants
 
-- throxy drift
+- Dialqueue drift
 - entire gap
 - right misroute
 - human blindspot
@@ -52,17 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://throxy.com/resources/blog/ai-sdrs-are-killing-sales
-- https://www.ycombinator.com/companies/throxy
-- https://www.ycombinator.com/launches/NRm-throxy-book-meetings-without-the-busywork
-- https://www.tryfondo.com/blog/throxy-launches
-- https://gohub.vc/throxy-ai-sales-agents/
-- https://gohub.vc/throxy-raises-6m-seed-round/
-- https://www.linkedin.com/in/bmerey/
-- https://arxiv.org/abs/1103.4601
 
 ## Boundary
 

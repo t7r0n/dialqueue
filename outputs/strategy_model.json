@@ -1,69 +1,73 @@
 {
-  "company": "throxy",
+  "company": "Dialqueue",
   "repo": "dialqueue",
   "terms": [
-    "throxy",
-    "entire",
-    "right",
-    "human",
-    "traditional",
-    "industry",
-    "linkedin",
-    "apollo"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "throxy_coverage",
-    "entire_risk",
-    "right_precision",
-    "human_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "throxy_drift",
-    "entire_gap",
-    "right_misroute",
-    "human_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
-  "evidence_density": 17.75,
+  "evidence_density": 17.5,
   "pressure_index": 0.3167,
   "blocked_share": 0.0972,
   "review_share": 0.1319,
   "top_leverage_points": [
     {
       "rank": 1,
-      "scenario": "throxy evidence replay",
-      "metric": "throxy_coverage",
-      "failure_mode": "throxy_drift",
-      "evidence": "ev_0132",
+      "scenario": "evidence replay",
+      "metric": "evidence_coverage",
+      "failure_mode": "evidence_drift",
+      "evidence": "ev_0000",
       "operator_action": "block release until cited evidence is regenerated",
       "severity": 2.611
     },
     {
       "rank": 2,
-      "scenario": "human operator packet",
-      "metric": "entire_risk",
-      "failure_mode": "entire_gap",
-      "evidence": "ev_0011",
+      "scenario": "review operator packet",
+      "metric": "handoff_risk",
+      "failure_mode": "handoff_gap",
+      "evidence": "ev_0099",
       "operator_action": "accept only if decision claims cite fixture evidence",
       "severity": 2.556
     },
     {
       "rank": 3,
-      "scenario": "right regression harness",
-      "metric": "right_precision",
-      "failure_mode": "right_misroute",
-      "evidence": "ev_0066",
+      "scenario": "claim regression harness",
+      "metric": "claim_precision",
+      "failure_mode": "claim_misroute",
+      "evidence": "ev_0022",
       "operator_action": "open a regression issue with trace and benchmark delta",
       "severity": 2.528
     },
     {
       "rank": 4,
-      "scenario": "entire boundary probe",
-      "metric": "human_latency",
-      "failure_mode": "human_blindspot",
-      "evidence": "ev_0033",
+      "scenario": "handoff boundary probe",
+      "metric": "review_latency",
+      "failure_mode": "review_blindspot",
+      "evidence": "ev_0121",
       "operator_action": "route to reviewer with evidence packet",
       "severity": 2.528
     }
   ],
-  "readout": "throxy gets a local, deterministic pressure test around throxy, entire, and right. The useful part is the repeatable evidence path from fixture to failure to operator action."
+  "readout": "This local harness runs a deterministic pressure test around evidence, workflow, and review. The useful part is the repeatable evidence path from fixture to failure to operator action."
 }
